@@ -1,0 +1,234 @@
+
+.form-section {
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 40px;
+  }
+
+  .form-flex {
+    @include flexbox($flex-direction: column, $justify-content: center, $align-items: center, $gap: 40px);
+  }
+
+  .form-section__container {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .vertical-spacing {
+      margin-top: 20vh;
+      margin-bottom: 20vh;
+    }
+
+
+    .form__heading {
+
+    }
+
+    .form__inputs {
+
+      .invalid-feedback {
+        margin-right: .5rem;
+      }
+
+      .form__inputs__divider {
+        padding: 0;
+        margin: 0;
+        //temp
+        //it should be $gray-light
+        width: 100%;
+        color: black;
+      }
+
+
+      .form__input {
+
+
+        width: 100%;
+
+        &__base {
+          position: relative;
+
+          .input--base {
+            @extend .sub1;
+            @extend .lh-lg;
+            border-radius: 8px;
+            background-color: $gray-lighter;
+            padding: 8px 12px 8px 12px;
+            border: none;
+            color: $gray-dark;
+
+            &:focus {
+              box-shadow: none;
+              border: none;
+            }
+
+
+          }
+
+          .form__label {
+            @extend .sub1;
+            @extend .lh-lg;
+            position: absolute;
+            z-index: 1;
+            background-color: $gray-lighter;
+            width: 100%;
+            top: 0;
+            //bottom: 0;
+            right: 0;
+            margin: 0;
+            padding: 8px 12px 8px 12px;
+            pointer-events: none;
+            color: $gray-dark;
+            border-radius: 8px;
+            transition: 0.2s ease translateY;
+
+          }
+
+
+        }
+
+        &__text, &__phone, &__textarea {
+
+          .form-control {
+            ::placeholder {
+              color: $gray-dark;
+            }
+          }
+
+          .form-control:focus + .form__label,
+          .form-control:not(:placeholder-shown) + .form__label {
+            top: -2.5rem;
+
+            background-color: transparent;
+
+          }
+        }
+
+        &__phone, &__email {
+          //fixme
+          //, &__birth-year
+
+          .form-control {
+            direction: rtl;
+            text-align: left;
+          }
+
+        }
+
+        &__select {
+          @extend .sub1;
+
+
+          .form__label {
+            @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: center);
+
+            &__text {
+              flex-grow: 1;
+            }
+
+            &--move {
+              top: -2.5rem;
+              align-items: flex-start;
+              background-color: transparent;
+
+              img {
+                display: none;
+              }
+            }
+          }
+
+          //note rotate option.show
+          .form-select {
+            option {
+              border: none;
+
+
+              &:checked {
+                background-color: $gray-light !important;
+              }
+            }
+
+          }
+        }
+
+        &__radioButton {
+          @include flexbox($flex-direction: row, $justify-content: flex-start, $align-items: center, $gap: 20px);
+
+
+        }
+
+        &__checkboxGroup {
+
+          @include flexbox($flex-direction: column, $justify-content: space-between, $align-items: flex-start, $gap: 16px);
+
+
+          .form-check-input {
+            border-radius: 6px;
+
+            &:checked {
+              background-image: url("../img/icons/tick.svg");
+              background-color: $secondary-2;
+
+            }
+
+            &:valid, &:invalid {
+              box-shadow: none;
+              border-color: initial;
+            }
+
+          }
+        }
+
+        &__radioButton, &__checkboxGroup {
+
+
+          .form-check {
+            padding: 0;
+            color: $secondary-2;
+            @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: center, $gap: 8px);
+
+
+          }
+
+          .form-check-label {
+            text-align: center;
+
+            &:valid, &:invalid {
+              box-shadow: none;
+              border-color: initial;
+            }
+          }
+
+          .form-check-input {
+            float: right;
+            margin: 10px;
+
+
+          }
+        }
+      }
+
+      .form__submit__btn {
+        border-radius: 10px;
+        padding: 10px 16px 10px 16px;
+        color: $gray-light-medium;
+
+      }
+    }
+  }
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: initial;
+}
+
+.was-validated .form-check-input:valid, .form-check-input.is-valid, .form-check-input.is-valid ~ .form-check-label {
+  border-color: initial;
+  color: initial;
+}
+
+.was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked {
+  background-color: initial;
+  color: initial;
+  box-shadow: none;
+}

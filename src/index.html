@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="icon" href="assets/img/icons/home.svg" />
+  <title>فرم کارآموزی - سکان آکادمی</title>
+  <!--  //fixme-->
+  <style>
+
+  </style>
+</head>
+<body>
+<div class="col-12 body-container ">
+  <header class="col-12 row">
+    <div class="container col-12">
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md sticky-top "
+      >
+        <!-- Navbar Container -->
+        <div
+          class="nav-container"
+        >
+          <!-- profile btn -->
+          <a class="btn order-3" href="#">
+            <!-- image -->
+            <img
+              src="./assets/img/profilePic.png"
+              class="btn--icon icon-sm profile__pic"
+              alt="profile picture"
+            />
+
+          </a>
+          <!-- menu icon for small sreens -->
+          <button
+            class="btn navbar-toggler order-1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./assets/img/icons/menu-1.svg"
+              alt="menu icon"
+              class="secondary-2 icon-md "
+            />
+          </button>
+          <!-- navbars content (collapsible on smaller screens) -->
+          <div
+            class="offcanvas offcanvas-end flex-grow-0 flex-shrink-0 order-2"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn close__btn"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img
+                  src="./assets/img/icons/close-light.svg"
+                  alt="close sign"
+                  class="icon-md"
+                />
+              </button>
+            </div>
+            <!-- navbars content container -->
+            <div
+              class="offcanvas-body container d-flex flex-row justify-content-between align-items-start "
+            >
+              <!-- Navbar items -->
+              <ul class="navbar-nav  w-100 ">
+                <li
+                  class="nav-item order-5 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/glossary.svg"
+                    alt="Glossary Icon"
+                    class="icon-md fan-vaazheh-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">فن‌واژه</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-4 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/podcast.svg"
+                    alt="Podcast Icon"
+                    class="icon-md radio-fullstack-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">رادیوفول‌استک</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-3 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/collection.svg"
+                    alt="Collection Icon"
+                    class="icon-md majmooeha-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">مجموعه‌ها</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <!-- the current page that is open -->
+                <li
+                  class="nav-item is-open order-2 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/weblog.svg"
+                    alt="Weblog Icon"
+                    class="icon-md weblog-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">وبلاگ</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-1 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/academy.svg"
+                    alt="Academy Icon"
+                    class="icon-md dorehaye-amoozeshie-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">دوره‌های آموزشی</p>
+                  <span class="open-state  d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-0 d-block d-md-none d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./assets/img/icons/home.svg"
+                    alt="Home Icon"
+                    class="icon-md home-icon"
+                  />
+                  <p class="sub1 lh-lg">خانه</p>
+                  <span class="open-state"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Logo -->
+          <a class="navbar-brand order-1" href="#">
+            <img
+              class="logo"
+              alt="SokanAcademi logo"
+              src="./assets/img/icons/Logo.svg"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="col-12 row breadcrumb-section">
+    <div class="container col-12">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center">
+          <li class="breadcrumb-item">
+            <a class="lh-lg sub1" href="#">خانه</a>
+          </li>
+          <img
+            src="./assets/img/icons/arrow-left.svg"
+            alt="left arrow divider"
+            class="icon-xsm"
+          />
+          <li class="lh-lg sub1 breadcrumb-item active" aria-current="page">
+            فرم کارآموزی
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-section__container container row row-cols-1 col-lg-6 col-12 mx-auto">
+
+    </div>
+  </section>
+
+</div>
+<footer class="col-12 row bg-gray-lighter ">
+  <div class="row container ">
+    <div class=" row  container-fluid justify-content-sm-start  align-items-start ">
+      <span class="col-lg d-none d-lg-block order-2"></span>
+
+      <div class="col-lg-2 col-sm-4 col-5 links links--fast-access ">
+        <p class="t3 lh-lg">دسترسی سریع</p>
+        <div class="links-container">
+          <!-- links -->
+          <p class="sub1">درباره ما</p>
+          <p class="sub1">تماس با ما</p>
+          <p class="sub1">همکاری با ما</p>
+          <p class="sub1">شرایط و قوانین</p>
+        </div>
+      </div>
+      <div class=" col-lg-2   col-sm-4 col-5  links links--services">
+        <p class="t3 lh-lg">خدمات سکان آکادمی</p>
+        <div class="links-container">
+          <!-- links -->
+          <p class="sub1">دوره‌های آموزشی</p>
+          <p class="sub1">وبلاگ</p>
+          <p class="sub1">سکان پلاس</p>
+          <p class="sub1">رادیوفول‌استک</p>
+          <p class="sub1">فن‌واژه</p>
+        </div>
+      </div>
+
+      <div class="col-lg col-lg-7 col-md-12 description">
+        <img src="./assets/img/icons/Logo.svg" alt="sokan logo">
+        <p class="sub1">ما در سکان‌آکادمی معتقدیم همه‌ی انسان‌ها حق دارند، به آموزش باکیفیت و کم‌هزینه دسترسی آسان داشته
+          باشند و همه‌ی افراد می‌توانند با آموزش درست، زندگی فردی و اجتماعی خود را بهتر کنند. با توجه به تخصص تیم ما در
+          حوزه‌ی IT و نیاز روزافزون بازار کار به متخصصان این حوزه، تولید و عرضه‌ی محتوای مهارت‌محور و تخصصی را در حوزه‌ی
+          IT جدی‌تر دنبال کردیم. در این راه از ابتدای انتخاب مسیر متناسب با توانایی و امکانات دانشجو تا یادگیری، تمرین،
+          کسب مهارت تخصصی و عمومی، و در نهایت معرفی به بازار کار همراه او هستیم...
+        </p>
+      </div>
+    </div>
+    <p class="copy-right t4 lh-lg">کلیه حقوق مادی و معنوی این وب‌سایت متعلق به سکان آکادمی می‌باشد.</p>
+  </div>
+</footer>
+</body>
+</html>

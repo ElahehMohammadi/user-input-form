@@ -1,0 +1,75 @@
+// nav paddings
+$navbar-padding-x: 0rem;
+$navbar-padding-y: 0rem;
+$nav-link-padding-x: 0rem;
+$nav-link-padding-y: 0rem;
+$navbar-brand-padding-y: 0rem;
+$navbar-brand-padding-x: 0rem;
+$navbar-nav-link-padding-y: 0rem;
+$navbar-nav-link-padding-x: 0rem;
+$container-padding-x: 0rem;
+$container-margin-x: 0rem;
+
+//margin
+// Reset margins for navbar and its components
+$navbar-margin-y: 0;
+$navbar-nav-margin-x: 0;
+$navbar-brand-margin-end: 0;
+//dropdown menu
+$dropdown-menu-gap: $space-8px;
+
+//breadcrumb customization
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding-x: 0.5rem;
+$breadcrumb-margin-bottom: 0rem;
+$breadcrumb-bg: null;
+$breadcrumb-divider-color: $gray-medium-dark;
+$breadcrumb-active-color: $gray-medium-dark;
+
+//select color
+//fixme
+$form-select-line-height: $LINEHEIGHT-1;
+$form-select-color: $secondary-2;
+$form-select-bg: $gray-light;
+$form-select-bg-position: right $form-select-padding-x center;
+$form-select-bg-size: 16px 12px;
+$form-select-indicator-color: $secondary-2;
+$form-select-indicator: none;
+$form-select-border-width: 0px;
+$form-select-box-shadow: none;
+$form-select-focus-width: $input-focus-width;
+$form-select-focus-box-shadow: none;
+
+//radio btn
+$form-check-input-width: 1.25rem;
+$form-check-min-height: $font-size-base * $line-height-base;
+
+$form-check-margin-bottom: 0;
+$form-check-label-color: $secondary-2;
+$form-check-label-cursor: null;
+$form-check-transition: null;
+
+$form-check-input-active-filter: brightness(90%);
+
+$form-check-input-bg: white;
+$form-check-input-border: 2px solid $gray-dark;
+$form-check-input-border-radius: .25em;
+$form-check-radio-border-radius: 50%;
+$form-check-input-focus-border: none;
+$form-check-input-focus-box-shadow: none;
+
+$form-check-input-checked-color: $secondary-2;
+$form-check-input-checked-bg-color: white;
+$form-check-input-checked-border-color: $secondary-2;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 10 3 3 6-6'/></svg>");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-5 -5 10 10'><circle r='3' fill='#{$form-check-input-checked-color}'/></svg>");
+
+$form-check-input-indeterminate-color: $component-active-color;
+$form-check-input-indeterminate-bg-color: $component-active-bg;
+$form-check-input-indeterminate-border-color: $form-check-input-indeterminate-bg-color;
+$form-check-input-indeterminate-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+
+$form-check-inline-margin-end: 1rem;
+//validation
+$enable-validation-icons: false;
