@@ -21,4 +21,4 @@ A dynamic user input form that fetches input fields from an API and allows users
 ## نحوه اجرا
 1. پروژه را کلون کنید.
 2. دستور `npm install` را اجرا کنید تا وابستگی‌ها نصب شوند.
-3. فایل `index.html` را در مرورگر خود باز کنید و فرم را تکمیل کنید.
+3. دستور `npm start` را اجرا کنید تا پروژه در محیط توسعه اجرا شود.
